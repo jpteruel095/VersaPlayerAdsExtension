@@ -171,7 +171,7 @@ extension VersaPlayer {
         }else {
             switch keyPath ?? "" {
             case "status":
-                if let value = change?[.newKey] as? Int, let status = AVPlayerItem.Status(rawValue: value), let item = object as? AVPlayerItem {
+                if let value = change?[.newKey] as? Int, let status = AVPlayerItem.AVPlayerItem.Status(rawValue: value), let item = object as? AVPlayerItem {
                     if status == .failed, let error = item.error as NSError?, let underlyingError = error.userInfo[NSUnderlyingErrorKey] as? NSError {
                         var playbackError = VersaPlayerPlaybackError.unknown
                         switch underlyingError.code {

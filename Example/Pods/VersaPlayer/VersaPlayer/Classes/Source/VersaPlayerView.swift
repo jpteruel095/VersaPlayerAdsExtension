@@ -120,7 +120,7 @@ open class VersaPlayerView: View, PIPProtocol {
         addSubview(coordinator, positioned: NSWindow.OrderingMode.above, relativeTo: renderingView)
         #else
         addSubview(coordinator)
-        bringSubview(toFront: coordinator)
+        bringSubviewToFront(coordinator)
         #endif
     }
     
