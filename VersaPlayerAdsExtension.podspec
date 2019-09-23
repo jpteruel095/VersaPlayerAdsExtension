@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VersaPlayerAdsExtension'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'VersaPlayer Extension to enable video ads.'
   s.description      = 'VersaPlayer Extension to enable video ads functionality.'
   s.homepage         = 'https://github.com/josejuanqm/VersaPlayerAdsExtension'
@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.source_files = 'VersaPlayerAdsExtension/Classes/**/*'
   s.dependency 'VersaPlayer'
   s.dependency 'GoogleAds-IMA-iOS-SDK'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end
